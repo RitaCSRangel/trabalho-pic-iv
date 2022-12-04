@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@angular/cli": "^14.2.9"
+  },
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}

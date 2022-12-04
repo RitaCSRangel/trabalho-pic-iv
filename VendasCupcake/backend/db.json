@@ -1,0 +1,157 @@
+{
+    "conta":[
+        {
+            "conta_id": "#00001",
+            "conta_nome": "Cupcakes e Cia",
+            "conta_tipo": 2,
+            "conta_rua": "Rua dos doces",
+            "conta_bairro": "Bairro de Gengibre",
+            "conta_numero": "100",
+            "conta_complemento": "",
+            "conta_cep": "1111-1111",
+            "conta_usuario": "cupecia",
+            "conta_senha": "cupecia",
+            "conta_email": "cupecia@email.com",
+            "conta_status": 1
+        },
+        {
+            "conta_id": "#00002",
+            "conta_nome": "Cupcakes Store",
+            "conta_tipo": 2,
+            "conta_rua": "Rua dos alecrins",
+            "conta_bairro": "Bairro de Menta",
+            "conta_numero": "1",
+            "conta_complemento": "",
+            "conta_cep": "2222-2222",
+            "conta_usuario": "cupstore",
+            "conta_senha": "cupstore",
+            "conta_email": "cupstore@email.com",
+            "conta_status": 1
+        },
+        {
+            "conta_id": "#00003",
+            "conta_nome": "CupCup Cakes",
+            "conta_tipo": 2,
+            "conta_rua": "Rua dos bolos",
+            "conta_bairro": "Bairro de de morango",
+            "conta_numero": "5",
+            "conta_complemento": "11",
+            "conta_cep": "3333-3333",
+            "conta_usuario": "bolocake",
+            "conta_senha": "bolocake",
+            "conta_email": "bolocake@email.com",
+            "conta_status": 2
+        },
+        {
+            "conta_id": "#00004",
+            "conta_nome": "Doceteria dos Cupcakes",
+            "conta_tipo": 2,
+            "conta_rua": "Rua dos chocolates",
+            "conta_bairro": "Bairro de chocolate",
+            "conta_numero": "10",
+            "conta_complemento": "10",
+            "conta_cep": "4444-4444",
+            "conta_usuario": "doceteria",
+            "conta_senha": "doceteria",
+            "conta_email": "doceteria@email.com",
+            "conta_status": 1
+        },
+        {
+            "conta_id": "#00005",
+            "conta_nome": "Cuplicious",
+            "conta_tipo": 2,
+            "conta_rua": "Rua dos candies",
+            "conta_bairro": "Bairro de sweets",
+            "conta_numero": "1",
+            "conta_complemento": "2",
+            "conta_cep": "5555-5555",
+            "conta_usuario": "cuplicious",
+            "conta_senha": "cuplicious",
+            "conta_email": "cuplicious@email.com",
+            "conta_status": 2
+        },
+        {
+            "conta_id": "#00006",
+            "conta_nome": "Cupkids",
+            "conta_tipo": 2,
+            "conta_rua": "Rua das crianças",
+            "conta_bairro": "Bairro de doces",
+            "conta_numero": "50",
+            "conta_complemento": "3",
+            "conta_cep": "6666-6666",
+            "conta_usuario": "cupkids",
+            "conta_senha": "cupkids",
+            "conta_email": "cupkids@email.com",
+            "conta_status": 2
+        },
+        {
+            "conta_id": "#00007",
+            "conta_nome": "Cupcakes de Aniversário",
+            "conta_tipo": 2,
+            "conta_rua": "Rua dos aniversários",
+            "conta_bairro": "Bairro de cupcakes",
+            "conta_numero": "2000",
+            "conta_complemento": "200",
+            "conta_cep": "7777-7777",
+            "conta_usuario": "nivercup",
+            "conta_senha": "nivercup",
+            "conta_email": "nivercup@email.com",
+            "conta_status": 2
+        },
+        {
+            "conta_id": "#00008",
+            "conta_nome": "Doces e Cia",
+            "conta_tipo": 2,
+            "conta_rua": "Rua das acácias",
+            "conta_bairro": "Bairro Das Flores",
+            "conta_numero": "3423",
+            "conta_complemento": "",
+            "conta_cep": "8888-8888",
+            "conta_usuario": "docesecia",
+            "conta_senha": "docesecia",
+            "conta_email": "docesecia@email.com",
+            "conta_status": 2
+        }
+    ],
+    "cardapio":[
+        {
+            "cardapio_id": "#00001",
+            "cardapio_conta": "#00001"
+        },
+        {
+            "cardapio_id": "#00002",
+            "cardapio_conta": "#00002"
+        },
+        {
+            "cardapio_id": "#00003",
+            "cardapio_conta": "#00003"
+        }
+    ],
+    "produto":[
+        {
+            "produto_id": "#00001",
+            "produto_nome": "Cupcake de chocolate",
+            "produto_descricao": "Cupcake com cobertura de chocolate.",
+            "produto_preco": 10,
+            "produto_quantidade": 100,
+            "produto_cardapio": "#00001"
+        },
+        {
+            "produto_id": "#00002",
+            "produto_nome": "Cupcake de morango",
+            "produto_descricao": "Cupcake com cobertura de morango.",
+            "produto_preco": 12,
+            "produto_quantidade": 100,
+            "produto_cardapio": "#00001"
+        },
+        {
+            "produto_id": "#00003",
+            "produto_nome": "Cupcake de baunilha",
+            "produto_descricao": "Cupcake com cobertura de baunilha.",
+            "produto_preco": 8,
+            "produto_quantidade": 100,
+            "produto_cardapio": "#00001"
+        }
+    ],
+    "produtoCarrinho":[]
+}

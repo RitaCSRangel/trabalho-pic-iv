@@ -1,0 +1,72 @@
+<!-- Cards de Produto -->
+<div class="cardapio">
+
+    <!-- Dentro do container de menu-->
+    <div class="produtos-container">
+
+        <!-- Para cada produto do cardápio-->
+        <div *ngFor="let produto of produtos">
+            <!-- Gerar um card-->
+            <div class="cardProduto" id="{{produto.produto_id}}">
+
+                <div class="card-infos">
+
+                    <!-- Imagem -->
+                    <img src="./assets/sugarrush.png" class="card-imagem" alt="Logo Sugar Rush">
+
+                    <div class="infos-procuto">
+                        <!-- Nome do Produto -->
+                        <p class="card-titulo">{{produto.produto_nome}}</p>
+
+                        <!-- Preço do Produto -->
+                        <p class="card-descricao aproximar">UN <span>R$ {{produto.produto_preco}}</span></p>
+                    </div>
+
+                </div>
+
+                <div class="card-botoes">
+
+                    <div class="botao" [style.color]="corBotaoAdicionar" (click)="IncrementarProdutosDoCarrinho(produto)">+</div>
+                    <div class="botao" [style.color]="corBotaoDecrementar" (click)="DecrementarProdutosDoCarrinho(produto)">-</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Gerar um elemento do carrinho -->
+    <div class="carrinho-container">
+
+        <div class="carrinho-titulo-container"> 
+            <p class="carrinho-titulo">Carrinho de Compras</p>
+            <p class="carrinho-quantidadeItens">{{totalProdutos}} itens</p>
+        </div>
+
+        <div class="carrinho-produtocard">
+
+            <div class="cardProdutoCarrinho" *ngFor="let produto of produtoCarrinho" id="{{produto.prodcarrinho_id}}">
+
+                <div class="carrinho-produtocard-info">
+                    <p class="carrinho-produtocard-info-nome">{{produto.prodcarrinho_produtonome}}</p>
+                    <p class="carrinho-produtocard-info-preco aproximar">R$ {{produto.prodcarrinho_produtopreco}}</p>
+                </div>
+
+                <p class="carrinho-produtocard-info-quantidade">{{produto.prodcarrinho_produtoquantidade}}</p>
+    
+            </div>
+
+            <hr class="solid">
+
+            <div class="carrinho-produtocard-totalcontainer">
+                <p class="carrinho-produtocard-totaltexto">Valor Total</p>
+                <p class="carrinho-produtocard-totaltexto">R$ {{totalValorProdutos}}</p>
+            </div>
+
+            <div class="carrinho-botao-comprar" [style.background]="corBotaoProsseguirCompra">
+                <p class="carrinho-comprar-texto">Prosseguir para o Pagamento</p>
+            </div>
+        </div>
+    </div>
